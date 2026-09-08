@@ -24,6 +24,9 @@ function Home() {
         </div>
       </section>
 
+      {/* Braoza Widget */}
+      <button className="font-style">{/* Braoza: Font -> Georgia */}</button>
+
       {/* Featured Bikes */}
       <section className="featured-section">
         <div className="section-heading">
