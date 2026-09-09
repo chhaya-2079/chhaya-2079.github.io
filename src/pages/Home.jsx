@@ -23,7 +23,12 @@ function Home() {
           </Link>
 
           {/* <button class="font-60 hero-button"> Custom trigger feature</button> */}
-          <button type="button" id="font-60" aria-label="Turn magnifier on">
+          <button
+            type="button"
+            id="font-60"
+            className="hero-button"
+            aria-label="Turn magnifier on"
+          >
             Magnifier
             {/* Braoza: Magnifier -> On */}
           </button>
