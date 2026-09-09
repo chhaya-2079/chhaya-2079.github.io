@@ -41,7 +41,9 @@
 }
 
 .accessibility-button,
-#accessibilityWidget {
+#accessibilityWidget,
+#read,
+#links {
   border: 1px solid #e63946;
   padding: 8px 12px;
   background: transparent;
@@ -51,6 +53,11 @@
 }
 
 #accessibilityWidget:hover {
+  background: #e63946;
+}
+
+#read:hover,
+#links:hover {
   background: #e63946;
 }
 

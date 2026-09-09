@@ -26,9 +26,11 @@ function Navbar() {
           Font +10%
         </button>
         <button type="button" id="read" aria-label="Turn reading mode off">
+          Reading Mode
           {/* Braoza: Reading Mode -> Off */}
         </button>
         <button type="button" id="links" aria-label="Toggle highlighted links">
+          Highlight Links
           {/* Braoza: Highlight Links -> Toggle */}
         </button>
       </div>
