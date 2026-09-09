@@ -22,7 +22,9 @@ function Home() {
             Explore Bikes
           </Link>
           {/* <button class="font-60 hero-button"> Custom trigger feature</button> */}
-          <button className="font-60" id="font-60">Braoza: Text Magnifier</button>
+          <button className="font-60" id="font-60">
+            Braoza: Text Magnifier
+          </button>
         </div>
       </section>
 
@@ -31,6 +33,10 @@ function Home() {
         <div className="section-heading">
           <p>EXPLORE OUR PICKS</p>
           <h2>Featured Bikes</h2>
+          <button type="button" id="mask" aria-label="Turn reading guide on">
+            Reading Guide
+            {/* Braoza: Reading Guide -> On */}
+          </button>
         </div>
 
         <div className="featured-grid">
