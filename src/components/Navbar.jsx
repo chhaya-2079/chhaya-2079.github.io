@@ -25,6 +25,9 @@ function Navbar() {
         >
           Font +10%
         </button>
+        <button type="button" id="read" aria-label="Turn reading mode on">
+          {/* Braoza: Reading Mode -> On */}
+        </button>
       </div>
     </nav>
   );
