@@ -33,6 +33,10 @@ function Navbar() {
           Highlight Links
           {/* Braoza: Highlight Links -> Toggle */}
         </button>
+        <button type="button" id="imagehide" aria-label="Turn image hiding on">
+          Hide Images
+          {/* Braoza: Hide Images -> On */}
+        </button>
       </div>
     </nav>
   );

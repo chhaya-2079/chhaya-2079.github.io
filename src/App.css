@@ -44,7 +44,8 @@
 #accessibilityWidget,
 #font-10-percentage,
 #read,
-#links {
+#links,
+#imagehide {
   border: 1px solid #e63946;
   padding: 8px 12px;
   background: transparent;
@@ -59,7 +60,8 @@
 
 #font-10-percentage:hover,
 #read:hover,
-#links:hover {
+#links:hover,
+#imagehide:hover {
   background: #e63946;
 }
 
