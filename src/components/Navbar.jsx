@@ -18,6 +18,13 @@ function Navbar() {
         >
           Accessibility
         </button>
+        <button
+          type="button"
+          id="font-10-percentage"
+          aria-label="Increase font size by 10 percent"
+        >
+          Font +10%
+        </button>
       </div>
     </nav>
   );
