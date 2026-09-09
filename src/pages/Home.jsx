@@ -21,9 +21,11 @@ function Home() {
           <Link to="/categories" className="hero-button">
             Explore Bikes
           </Link>
+
           {/* <button class="font-60 hero-button"> Custom trigger feature</button> */}
-          <button className="font-60" id="font-60">
-            Braoza: Text Magnifier
+          <button type="button" id="font-60" aria-label="Turn magnifier on">
+            Magnifier
+            {/* Braoza: Magnifier -> On */}
           </button>
         </div>
       </section>
