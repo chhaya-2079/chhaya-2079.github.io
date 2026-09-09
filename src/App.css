@@ -42,6 +42,7 @@
 
 .accessibility-button,
 #accessibilityWidget,
+#font-10-percentage,
 #read,
 #links {
   border: 1px solid #e63946;
@@ -56,6 +57,7 @@
   background: #e63946;
 }
 
+#font-10-percentage:hover,
 #read:hover,
 #links:hover {
   background: #e63946;
