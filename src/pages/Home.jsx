@@ -22,7 +22,7 @@ function Home() {
             Explore Bikes
           </Link>
           {/* <button class="font-60 hero-button"> Custom trigger feature</button> */}
-          <button className="font-60">Braoza: Text Magnifier</button>
+          <button className="font-60" id="font-60">Braoza: Text Magnifier</button>
         </div>
       </section>
 
