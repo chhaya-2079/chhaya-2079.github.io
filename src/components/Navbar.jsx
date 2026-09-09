@@ -11,6 +11,13 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/categories">Categories</Link>
         <Link to="/contact">Contact</Link>
+        <button
+          type="button"
+          id="accessibilityWidget"
+          aria-label="Open accessibility options"
+        >
+          Accessibility
+        </button>
       </div>
     </nav>
   );

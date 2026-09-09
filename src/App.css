@@ -40,6 +40,20 @@
   color: #e63946;
 }
 
+.accessibility-button,
+#accessibilityWidget {
+  border: 1px solid #e63946;
+  padding: 8px 12px;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#accessibilityWidget:hover {
+  background: #e63946;
+}
+
 .home-page {
   min-height: calc(100vh - 72px);
 }
