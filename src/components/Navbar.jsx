@@ -37,6 +37,10 @@ function Navbar() {
           Hide Images
           {/* Braoza: Hide Images -> On */}
         </button>
+        <button type="button" id="mask" aria-label="Turn reading guide on">
+          Reading Guide
+          {/* Braoza: Reading Guide -> On */}
+        </button>
       </div>
     </nav>
   );

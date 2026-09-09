@@ -45,7 +45,8 @@
 #font-10-percentage,
 #read,
 #links,
-#imagehide {
+#imagehide,
+#mask {
   border: 1px solid #e63946;
   padding: 8px 12px;
   background: transparent;
@@ -61,7 +62,8 @@
 #font-10-percentage:hover,
 #read:hover,
 #links:hover,
-#imagehide:hover {
+#imagehide:hover,
+#mask:hover {
   background: #e63946;
 }
 
