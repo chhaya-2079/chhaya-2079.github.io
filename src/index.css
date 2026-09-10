@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #08090b;
+  --panel: #101318;
+  --panel-light: #171b22;
+  --line: rgba(255, 255, 255, 0.12);
+  --muted: #9ca3af;
+  --acid: #d9ff45;
+  --coral: #ff5c4d;
+  --blue: #79a7ff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +18,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #0b0b0b;
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--ink);
   color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -17,4 +32,9 @@ a {
 
 button {
   font-family: inherit;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--ink);
 }

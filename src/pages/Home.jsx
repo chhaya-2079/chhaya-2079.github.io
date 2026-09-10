@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
+import bikes from "../data/bikes";
 
 function Home() {
+  const featuredBikes = [1, 2, 3].map((id) =>
+    bikes.find((bike) => bike.id === id),
+  );
+
   return (
     <main className="home-page">
       {/* Hero Section */}
       <section className="hero">
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-orbit hero-orbit-one" aria-hidden="true" />
+        <div className="hero-orbit hero-orbit-two" aria-hidden="true" />
         <div className="hero-content">
-          <p className="hero-tag">INDIAN SPORTS BIKES</p>
+          <p className="hero-tag">
+            <span className="status-dot" /> INDIAN SPORTS BIKES / 2026
+          </p>
 
           <h1>
             Experience the Thrill of
@@ -33,6 +43,50 @@ function Home() {
             {/* Braoza: Magnifier -> On */}
           </button>
         </div>
+
+        <div className="hero-readout" aria-label="Performance highlights">
+          <div>
+            <span>01</span>
+            <strong>RIDE</strong>
+            <small>BEYOND LIMITS</small>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>FEEL</strong>
+            <small>EVERY RPM</small>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>OWN</strong>
+            <small>THE ROAD</small>
+          </div>
+        </div>
+
+        <div className="scroll-cue" aria-hidden="true">
+          <span /> SCROLL TO DISCOVER
+        </div>
+      </section>
+
+      <section
+        className="signal-strip"
+        aria-label="Indian bike performance stats"
+      >
+        <div>
+          <strong>18+</strong>
+          <span>machines indexed</span>
+        </div>
+        <div>
+          <strong>225</strong>
+          <span>km/h top speed</span>
+        </div>
+        <div>
+          <strong>48</strong>
+          <span>PS peak output</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>pure adrenaline</span>
+        </div>
       </section>
 
       {/* Featured Bikes */}
@@ -47,62 +101,39 @@ function Home() {
         </div>
 
         <div className="featured-grid">
-          <article className="bike-card">
-            <div className="bike-image">
-              <img
-                src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80"
-                alt="Sports motorcycle"
-              />
-            </div>
+          {featuredBikes.map((bike) => (
+            <article className="bike-card" key={bike.id}>
+              <div className="bike-image">
+                <img src={bike.image} alt={`${bike.brand} ${bike.name}`} />
+              </div>
 
-            <div className="bike-card-content">
-              <p>ROYAL ENFIELD</p>
-              <h3>Continental GT 650</h3>
-              <span>648cc • Parallel Twin</span>
+              <div className="bike-card-content">
+                <p>{bike.brand}</p>
+                <h3>{bike.name}</h3>
+                <span>
+                  {bike.engine} • {bike.power}
+                </span>
 
-              <Link to="/bike/1" className="card-button">
-                View Details
-              </Link>
-            </div>
-          </article>
+                <Link to={`/bike/${bike.id}`} className="card-button">
+                  View Details
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
 
-          <article className="bike-card">
-            <div className="bike-image">
-              <img
-                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
-                alt="KTM 390 Duke"
-              />
-            </div>
-
-            <div className="bike-card-content">
-              <p>KTM</p>
-              <h3>390 Duke</h3>
-              <span>399cc • Single Cylinder</span>
-
-              <Link to="/bike/2" className="card-button">
-                View Details
-              </Link>
-            </div>
-          </article>
-
-          <article className="bike-card">
-            <div className="bike-image">
-              <img
-                src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=900&q=80"
-                alt="Indian sports motorcycle"
-              />
-            </div>
-
-            <div className="bike-card-content">
-              <p>TVS</p>
-              <h3>Apache RR 310</h3>
-              <span>312cc • Single Cylinder</span>
-
-              <Link to="/bike/3" className="card-button">
-                View Details
-              </Link>
-            </div>
-          </article>
+        <div className="collection-prompt">
+          <div>
+            <p className="section-kicker">THE NEXT GENERATION</p>
+            <h3>
+              Find the machine
+              <br />
+              <em>that moves you.</em>
+            </h3>
+          </div>
+          <Link to="/categories" className="outline-button">
+            Browse full collection <span>↗</span>
+          </Link>
         </div>
       </section>
     </main>

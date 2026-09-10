@@ -16,7 +16,7 @@ const bikes = [
     description:
       "A stylish twin-cylinder motorcycle combining classic design with modern performance.",
     image:
-      "/images/bikes/continental-gt-650.jpg"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Enfield%20Continental%20GT%20650%20%281%29.jpg"
    },
 
   {
@@ -36,7 +36,7 @@ const bikes = [
     description:
       "A modern roadster offering strong performance, comfortable ergonomics and premium styling.",
     image:
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Triumph%20Speed%20400.jpg"
   },
 
   {
@@ -56,7 +56,7 @@ const bikes = [
     description:
       "A lightweight premium street motorcycle designed for agile handling and everyday performance.",
     image:
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Honda%20CB300R.png"
   },
 
   {
@@ -116,7 +116,7 @@ const bikes = [
     description:
       "A lightweight supersport motorcycle with aggressive styling, strong handling and advanced electronics.",
     image:
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yamaha%20YZF-R15.jpg"
   },
 
   {
@@ -136,7 +136,7 @@ const bikes = [
     description:
       "A sharp and aggressive fully faired motorcycle built for sporty handling and exciting performance.",
     image:
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KTM%20RC390%20Photo-1449426468159-d96dbf08f19f%202015.jpg"
   },
 
   {
@@ -156,7 +156,7 @@ const bikes = [
     description:
       "A twin-cylinder sportbike offering smooth performance, comfortable ergonomics and iconic Ninja styling.",
     image:
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawasaki%20Ninja%20300cc%202013.JPG"
   },
 
   {
@@ -176,7 +176,7 @@ const bikes = [
     description:
       "A premium lightweight sportbike combining Italian styling, strong acceleration and sharp handling.",
     image:
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Aprilia%20RS%20457.jpg"
   },
 
   {
@@ -216,7 +216,7 @@ const bikes = [
     description:
       "A powerful street naked motorcycle with aggressive styling, sharp handling and strong mid-range performance.",
     image:
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KTM%20390%20Duke.jpg"
   },
 
   {
@@ -236,7 +236,7 @@ const bikes = [
     description:
       "A compact premium roadster offering agile handling, comfortable ergonomics and BMW styling.",
     image:
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/BMW%20G%20310%20R.jpg"
   },
 
   {
@@ -436,7 +436,7 @@ const bikes = [
     description:
       "A versatile twin-cylinder sportbike delivering strong performance with comfortable everyday ergonomics.",
     image:
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kawasaki%20Ninja%20650.jpg"
   },
 
   {
