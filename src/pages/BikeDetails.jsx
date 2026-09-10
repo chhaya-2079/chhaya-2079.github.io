@@ -20,6 +20,9 @@ function BikeDetails() {
       <section className="details-container">
         <div className="details-image">
           <img src={bike.image} alt={bike.name} />
+          <span className="details-image-label">
+            ISB / {String(bike.id).padStart(2, "0")}
+          </span>
         </div>
 
         <div className="details-content">
@@ -27,7 +30,12 @@ function BikeDetails() {
 
           <h1>{bike.name}</h1>
 
-          <p className="details-category">{bike.category}</p>
+          <div className="details-meta">
+            <p className="details-category">{bike.category}</p>
+            <span className="details-status">
+              <i /> IN STOCK PROFILE
+            </span>
+          </div>
 
           <h2>{bike.price}</h2>
 

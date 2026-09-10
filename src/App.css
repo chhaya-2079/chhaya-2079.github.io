@@ -780,3 +780,214 @@
   .details-image { height: 370px; }
   .contact-intro h1, .details-content h1 { font-size: 52px; }
 }
+
+/* Route polish and readable page scale */
+.home-page,
+.categories-page,
+.contact-page,
+.details-page {
+  animation: page-enter .7s cubic-bezier(.2,.75,.2,1) both;
+}
+
+.nav-links a.active {
+  color: var(--acid);
+  font-weight: 700;
+}
+
+.nav-links a.active::after {
+  right: 0;
+  height: 2px;
+  box-shadow: 0 0 12px rgba(217, 255, 69, .7);
+}
+
+.section-heading h1 {
+  margin-top: 12px;
+  font-size: clamp(48px, 6vw, 78px);
+  letter-spacing: -.06em;
+  line-height: .98;
+}
+
+.categories-page > .section-heading {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: left;
+  padding-bottom: 35px;
+  border-bottom: 1px solid var(--line);
+}
+
+.category-section {
+  max-width: 1200px;
+  margin-bottom: 112px;
+}
+
+.category-heading {
+  padding: 18px 0 18px 22px;
+  margin-bottom: 34px;
+  border-left-width: 3px;
+  background: linear-gradient(90deg, rgba(217,255,69,.07), transparent 70%);
+}
+
+.category-heading h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -.05em;
+}
+
+.categories-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.categories-page .bike-image {
+  height: 290px;
+}
+
+.contact-page {
+  min-height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-intro h1 {
+  font-size: clamp(52px, 7vw, 88px);
+}
+
+.contact-intro > p:not(.section-tag) {
+  max-width: 480px;
+  font-size: 17px;
+}
+
+.contact-info div {
+  padding-left: 16px;
+  border-left: 2px solid rgba(217,255,69,.5);
+}
+
+.contact-form {
+  padding: clamp(28px, 4vw, 48px);
+  box-shadow: 18px 18px 0 rgba(217,255,69,.06);
+}
+
+.details-page {
+  min-height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.details-page::before {
+  content: 'DETAILS / PERFORMANCE / 0' attr(data-bike-id);
+  position: absolute;
+  right: -40px;
+  top: 38%;
+  color: rgba(217,255,69,.06);
+  font-family: 'DM Mono', monospace;
+  font-size: clamp(50px, 10vw, 160px);
+  font-weight: 700;
+  letter-spacing: -.08em;
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+.details-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.details-image {
+  position: relative;
+  animation: detail-image-in .9s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.details-image::after {
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(217,255,69,.28);
+  pointer-events: none;
+}
+
+.details-image-label {
+  position: absolute;
+  left: 30px;
+  bottom: 26px;
+  z-index: 1;
+  padding: 8px 12px;
+  color: var(--acid);
+  background: rgba(8,9,11,.78);
+  border: 1px solid rgba(217,255,69,.5);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+
+.details-content {
+  animation: detail-content-in .9s .16s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.details-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-bottom: 20px;
+}
+
+.details-meta .details-category { margin: 0; }
+
+.details-status {
+  color: #9ca3af;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+.details-status i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--acid);
+  box-shadow: 0 0 9px var(--acid);
+}
+
+.details-content h2 {
+  font-size: 38px;
+  letter-spacing: -.05em;
+}
+
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes detail-image-in {
+  from { opacity: 0; transform: translateX(-42px) scale(.96); clip-path: inset(0 16% 0 0); }
+  to { opacity: 1; transform: translateX(0) scale(1); clip-path: inset(0); }
+}
+
+@keyframes detail-content-in {
+  from { opacity: 0; transform: translateX(36px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 900px) {
+  .categories-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-page, .details-page { display: block; }
+}
+
+@media (max-width: 620px) {
+  .categories-grid { grid-template-columns: 1fr; }
+  .categories-page .bike-image { height: 250px; }
+  .categories-page > .section-heading { padding-bottom: 24px; }
+  .category-section { margin-bottom: 75px; }
+  .contact-page, .details-page { min-height: auto; }
+  .details-image { margin-bottom: 18px; }
+  .details-image::after { inset: 12px; }
+  .details-image-label { left: 21px; bottom: 18px; }
+}
