@@ -27,6 +27,13 @@ function Navbar() {
         >
           Contact
         </NavLink>
+        <button
+          type="button"
+          id="accessibilityWidget"
+          aria-label="Open accessibility options"
+        >
+          Accessibility
+        </button>
       </div>
     </nav>
   );
