@@ -34,6 +34,9 @@ function Navbar() {
         >
           Accessibility
         </button>
+        <button type="button" id="read" aria-label="Turn reading mode off">
+          {/* Braoza: Reading Mode -> Off */}
+        </button>
       </div>
     </nav>
   );
